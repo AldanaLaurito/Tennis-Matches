@@ -1,0 +1,16 @@
+﻿@model Baufest.Tennis.Web.Models.JugadorViewModel
+
+@{
+    ViewBag.Title = "Agregar Jugador";
+}
+
+<h2>Agregar Jugador</h2>
+
+@using (Html.BeginForm("Agregar", "Jugadores"))
+{
+    @Html.Partial("_CreateUpdate", Model)
+}
+
+@section scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

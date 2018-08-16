@@ -1,0 +1,34 @@
+﻿@model Baufest.Tennis.Web.Models.PartidoDeleteViewModel
+
+@{
+    ViewBag.Title = "Eliminar Partido";
+}
+
+<h2>Eliminar Partido</h2>
+
+@using (Html.BeginForm("Eliminar", "Partidos"))
+{
+    @Html.HiddenFor(m => m.Id)
+
+    @Html.ValidationSummary(true, null, new { @class = "text-danger" })
+
+    <div class="form-group">
+        <label>Fecha Comienzo</label>        
+        <p class="form-control-static">@string.Format("{0:dd/MM/yyyy H:mm}", Model.FechaComienzo)</p>
+    </div>
+
+    <div class="form-group">
+        <label>Jugador Local</label>
+        <p class="form-control-static">@Model.JugadorLocalNombre</p>
+    </div>
+
+    <div class="form-group">
+        <label>Jugador Visitante</label>
+        <p class="form-control-static">@Model.JugadorVisitanteNombre</p>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-danger">Eliminar</button>
+        @Html.ActionLink("Cancelar", "Index", null, new { @class = "btn btn-warning" })
+    </div>
+}

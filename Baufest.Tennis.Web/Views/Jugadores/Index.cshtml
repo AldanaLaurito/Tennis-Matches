@@ -1,0 +1,33 @@
+﻿@model Baufest.Tennis.Web.Models.JugadoresListViewModel
+
+@{
+    ViewBag.Title = "Jugadores";
+}
+
+<h2>Jugadores</h2>
+
+@Html.ActionLink("Agregar Jugador", "Agregar")
+
+<table class="table table-striped table-bordered">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Nombre</th>
+        <th>Puntos</th>
+        <th>Acciones</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach(var jugador in Model.ListaDeJugadores)
+    {
+        <tr>
+            <td>@jugador.IdJugador</td>
+            <td>@jugador.Nombre</td>
+            <td>@jugador.Puntos</td>
+            <td>
+            @Html.ActionLink("Editar", "Editar", new { id = jugador.IdJugador })
+            @Html.ActionLink("Re-calcular ranking", "ReCalculateRanking", new { id = jugador.IdJugador })</td>
+        </tr>
+    }
+    </tbody>
+</table>

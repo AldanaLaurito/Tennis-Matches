@@ -1,0 +1,17 @@
+﻿@model Baufest.Tennis.Web.Models.JugadorViewModel
+
+@{
+    ViewBag.Title = "Editar Jugador";
+}
+
+<h2>Editar Jugador</h2>
+
+@using (Html.BeginForm("Editar", "Jugadores"))
+{
+    @Html.HiddenFor(model => model.IdJugador)
+    @Html.Partial("_CreateUpdate", Model)
+}
+
+@section scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

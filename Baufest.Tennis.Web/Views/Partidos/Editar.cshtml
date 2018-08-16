@@ -1,0 +1,28 @@
+﻿@model Baufest.Tennis.Web.Models.PartidoCreateUpdateViewModel
+
+@{
+    ViewBag.Title = "Editar Partido";
+}
+
+<h2>Editar Jugador</h2>
+
+@using (Html.BeginForm("Editar", "Partidos"))
+{
+    @Html.HiddenFor(model => model.Id)
+    @Html.Partial("_CreateUpdate", Model)
+}
+
+@section scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+<script type="text/javascript">
+        jQuery.validator.methods.date=function (value, element) {
+                var isChrome=/Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+            if (isChrome) {
+                var d = new Date();
+                return this.optional(element) || !/Invalid|NaN/.test(new Date(d.toLocaleDateString(value)));
+            } else {
+                return this.optional(element) || !/Invalid|NaN/.test(new Date(value));
+            }
+        };
+</script>
+}

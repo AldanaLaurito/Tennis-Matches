@@ -1,0 +1,20 @@
+﻿@model Baufest.Tennis.Web.Models.CanchaViewModel
+
+@Html.ValidationSummary(true, null, new { @class = "text-danger" })
+
+<div class="form-group">
+    @Html.LabelFor(m => m.Nombre)
+    @Html.TextBoxFor(m => m.Nombre, new { @class = "form-control" })
+    @Html.ValidationMessageFor(m => m.Nombre, null, new { @class = "text-danger" })
+</div>
+
+<div class="form-group">
+    @Html.LabelFor(m => m.Direccion)
+    @Html.TextBoxFor(m => m.Direccion, new { @class = "form-control" })
+    @Html.ValidationMessageFor(m => m.Direccion, null, new { @class = "text-danger" })
+</div>
+
+<div class="form-group">
+    <button type="submit" class="btn btn-primary">Guardar</button>
+    @Html.ActionLink("Cancelar", "Index", null, new { @class = "btn btn-warning" })
+</div>

@@ -1,0 +1,83 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Baufest.Tennis.Web", "Baufest.Tennis.Web\Baufest.Tennis.Web.csproj", "{ECF68466-7142-413B-8EF9-AF6DEE82354C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Baufest.Tennis.Persistence", "Baufest.Tennis.Persistence\Baufest.Tennis.Persistence.csproj", "{61BDC28D-7F7E-4831-BD7B-87E65ECB986A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Baufest.Tennis.Domain", "Baufest.Tennis.Domain\Baufest.Tennis.Domain.csproj", "{E89C4E5E-3AEB-416F-98F6-FF46836ECC9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Baufest.Tennis.Business.Tests", "Baufest.Tennis.Business.Tests\Baufest.Tennis.Business.Tests.csproj", "{4710DB19-590F-4F4E-B80D-5FE39CD4C104}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Baufest.Tennis.Web.Tests", "Baufest.Tennis.Web.Tests\Baufest.Tennis.Web.Tests.csproj", "{3557DCA6-D602-4A82-B752-A71CE5FD0A9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Baufest.Tennis.Business", "Baufest.Tennis.Business\Baufest.Tennis.Business.csproj", "{485441AE-9754-4332-BFA7-AB0AC9AB7AED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{BA6B2D0E-5819-41E2-BEEB-9CAF4448C505}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs.baufest.com:8080/tfs/baufest
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Baufest.Tennis.Web\\Baufest.Tennis.Web.csproj
+		SccProjectName1 = Baufest.Tennis.Web
+		SccLocalPath1 = Baufest.Tennis.Web
+		SccProjectUniqueName2 = Baufest.Tennis.Persistence\\Baufest.Tennis.Persistence.csproj
+		SccProjectName2 = Baufest.Tennis.Persistence
+		SccLocalPath2 = Baufest.Tennis.Persistence
+		SccProjectUniqueName3 = Baufest.Tennis.Domain\\Baufest.Tennis.Domain.csproj
+		SccProjectName3 = Baufest.Tennis.Domain
+		SccLocalPath3 = Baufest.Tennis.Domain
+		SccProjectUniqueName4 = Baufest.Tennis.Business.Tests\\Baufest.Tennis.Business.Tests.csproj
+		SccProjectName4 = Baufest.Tennis.Business.Tests
+		SccLocalPath4 = Baufest.Tennis.Business.Tests
+		SccProjectUniqueName5 = Baufest.Tennis.Web.Tests\\Baufest.Tennis.Web.Tests.csproj
+		SccProjectName5 = Baufest.Tennis.Web.Tests
+		SccLocalPath5 = Baufest.Tennis.Web.Tests
+		SccProjectUniqueName6 = Baufest.Tennis.Business\\Baufest.Tennis.Business.csproj
+		SccProjectName6 = Baufest.Tennis.Business
+		SccLocalPath6 = Baufest.Tennis.Business
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ECF68466-7142-413B-8EF9-AF6DEE82354C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECF68466-7142-413B-8EF9-AF6DEE82354C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECF68466-7142-413B-8EF9-AF6DEE82354C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECF68466-7142-413B-8EF9-AF6DEE82354C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61BDC28D-7F7E-4831-BD7B-87E65ECB986A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61BDC28D-7F7E-4831-BD7B-87E65ECB986A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61BDC28D-7F7E-4831-BD7B-87E65ECB986A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61BDC28D-7F7E-4831-BD7B-87E65ECB986A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E89C4E5E-3AEB-416F-98F6-FF46836ECC9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E89C4E5E-3AEB-416F-98F6-FF46836ECC9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E89C4E5E-3AEB-416F-98F6-FF46836ECC9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E89C4E5E-3AEB-416F-98F6-FF46836ECC9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4710DB19-590F-4F4E-B80D-5FE39CD4C104}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4710DB19-590F-4F4E-B80D-5FE39CD4C104}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4710DB19-590F-4F4E-B80D-5FE39CD4C104}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4710DB19-590F-4F4E-B80D-5FE39CD4C104}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3557DCA6-D602-4A82-B752-A71CE5FD0A9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3557DCA6-D602-4A82-B752-A71CE5FD0A9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3557DCA6-D602-4A82-B752-A71CE5FD0A9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3557DCA6-D602-4A82-B752-A71CE5FD0A9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{485441AE-9754-4332-BFA7-AB0AC9AB7AED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{485441AE-9754-4332-BFA7-AB0AC9AB7AED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{485441AE-9754-4332-BFA7-AB0AC9AB7AED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{485441AE-9754-4332-BFA7-AB0AC9AB7AED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,42 @@
+﻿@model Baufest.Tennis.Web.Models.TableroViewModel
+
+@{
+    ViewBag.Title = "Tablero";
+}
+
+<h2>Tablero</h2>
+
+<table class="table table-striped table-bordered">
+    <thead>
+    <tr>
+        <th>Jugadores</th>
+        <th>Puntos</th>
+        <th>Games Set</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@Model.JugadorLocalNombre</td>
+            <td id="puntosLocal">@Model.PuntosGameLocal</td>
+            <td id="gamesLocal">@Model.GamesLocal</td>
+        </tr>
+        <tr>
+            <td>@Model.JugadorVisitanteNombre</td>
+            <td id="puntosVisitante">@Model.PuntosGameVisitante</td>
+            <td id="gamesVisitante">@Model.GamesVisitante</td>
+        </tr>
+    </tbody>
+</table>
+
+@Html.HiddenFor(x => x.Id)
+
+@if (Model.Estado != Baufest.Tennis.Domain.Enums.EstadoPartido.Finalizado)
+{
+    <input type="button" id="local" value="Sumar Punto Local" />
+    <input type="button" id="visitante" value="Sumar Punto Visitante" />
+}
+
+@section scripts
+{
+    @Scripts.Render("~/Scripts/Tablero/scorer.js")
+}
